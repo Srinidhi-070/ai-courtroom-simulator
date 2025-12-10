@@ -505,4 +505,5 @@ The **AI Courtroom Simulator** is a complete, secure, and educational full-stack
 
 ---
 
-**Created for educational purposes - AI Courtroom Simulation ⚖️🤖**
+**Created for educational purposes - AI Courtroom Simulation ⚖️🤖**" #   a i - c o u r t r o o m - s i m u l a t o r "    
+ 
