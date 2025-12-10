@@ -1,509 +1,506 @@
-# AI COURTROOM SIMULATOR - PROFESSIONAL EDITION
+<div align="center">
 
-## 🎯 **Project Overview**
+# ⚖️ AI COURTROOM SIMULATOR 
+## 🏛️ **PROFESSIONAL EDITION** 🏛️
 
-This is an **advanced full-stack AI-powered courtroom simulation** with professional-grade features including user authentication, evidence management, analytics dashboard, and multi-case type support. Built for serious legal education and professional training.
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=2E86AB&center=true&vCenter=true&width=600&lines=Welcome+to+AI+Courtroom+Simulator!;Professional+Legal+Education+Platform;Powered+by+Advanced+AI+Technology;Experience+Real+Courtroom+Dynamics!" alt="Typing SVG" />
 
-### **🚀 PROFESSIONAL FEATURES:**
-- **🔐 User Authentication**: Secure login/register with JWT tokens
-- **📊 Analytics Dashboard**: Performance tracking with interactive charts
-- **📁 Evidence Management**: Upload and manage case evidence
-- **⚖️ Multi-Case Types**: Criminal, Civil, Family, Corporate, Constitutional
-- **🎭 Advanced Roles**: Defense, Prosecution, Judge, Witness, Jury
-- **💾 Database Integration**: SQLite for persistent data storage
-- **📈 Case History**: Track all previous sessions and outcomes
-- **🎨 Professional UI**: Modern interface with navigation and themes
-- **🤖 Enhanced AI**: Legal knowledge base with contextual responses
-- **🔒 Security Hardened**: Enterprise-level security measures
+[![GitHub stars](https://img.shields.io/github/stars/Srinidhi-070/ai-courtroom-simulator?style=for-the-badge&color=gold)](https://github.com/Srinidhi-070/ai-courtroom-simulator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Srinidhi-070/ai-courtroom-simulator?style=for-the-badge&color=blue)](https://github.com/Srinidhi-070/ai-courtroom-simulator/network)
+[![GitHub issues](https://img.shields.io/github/issues/Srinidhi-070/ai-courtroom-simulator?style=for-the-badge&color=red)](https://github.com/Srinidhi-070/ai-courtroom-simulator/issues)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+
+</div>
 
 ---
 
-## 🏗️ **Architecture**
+## 🌟 **What is AI Courtroom Simulator?**
 
-```
-┌─────────────────┐    HTTP/REST    ┌─────────────────┐    HTTP/JSON    ┌─────────────────┐
-│   FRONTEND      │ ◄──────────────► │    BACKEND      │ ◄──────────────► │   OLLAMA AI     │
-│   (Streamlit)   │                 │   (FastAPI)     │                 │   (Local LLM)   │
-│   Port: 8501    │                 │   Port: 8000    │                 │   Port: 11434   │
-└─────────────────┘                 └─────────────────┘                 └─────────────────┘
-        │                                   │
-        │                                   │
-        ▼                                   ▼
-┌─────────────────┐                 ┌─────────────────┐
-│   WEB BROWSER   │                 │  FILE STORAGE   │
-│   (User Interface)                │  (Sessions)     │
-└─────────────────┘                 └─────────────────┘
-```
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
+</div>
 
-### **🏗️ ENHANCED TECHNOLOGY STACK:**
-- **Frontend**: Streamlit with Plotly (Interactive dashboards)
-- **Backend**: FastAPI with advanced middleware
-- **Database**: SQLite with user management
-- **Authentication**: JWT tokens with secure hashing
-- **AI Engine**: Enhanced Ollama with legal knowledge base
-- **Analytics**: Real-time performance tracking
-- **Security**: Enterprise-grade security measures
-- **UI/UX**: Professional design with custom CSS
+**AI Courtroom Simulator** is a **revolutionary full-stack application** that brings the courtroom experience to your computer! 🖥️✨
+
+Imagine having your own **personal law school** where you can:
+- 🎭 **Role-play** as lawyers, judges, or witnesses
+- 🤖 **Interact with AI** that acts like real legal professionals
+- 📚 **Learn legal procedures** in a fun, interactive way
+- 🏆 **Track your progress** with detailed analytics
 
 ---
 
-## 📁 **Project Structure**
+## 🚀 **Amazing Features That Will Blow Your Mind!**
 
-```
-C:\Gen AI\
-├── app.py              # Enhanced Frontend (Professional UI)
-├── server.py           # Advanced Backend (Multi-feature API)
-├── requirements.txt    # Enhanced dependencies
-├── start_all.bat       # Professional edition startup
-├── courtroom.db        # SQLite database
-├── sessions/           # Session storage
-├── evidence/           # Evidence file storage
-├── venv/              # Python virtual environment
-├── app_basic.py        # Basic version backup
-├── server_basic.py     # Basic version backup
-└── README.md          # Complete professional guide
-```
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="500">
+</div>
 
----
-
-## 🚀 **Quick Start (3 Steps)**
-
-### **Step 1: Verify Ollama is Running**
-```cmd
-# Check if Ollama is already running (it should be)
-netstat -ano | findstr ":11434"
-# Should show: TCP 127.0.0.1:11434 LISTENING
-
-# If not running, start it:
-ollama serve
-```
-
-### **Step 2: Start the Application**
-```cmd
-# Double-click or run:
-start_all.bat
-```
-
-### **Step 3: Use the Professional Application**
-1. Browser opens to: http://localhost:8501
-2. **Register/Login**: Create account or login with credentials
-3. **Navigate**: Use sidebar to access Courtroom, Analytics, History
-4. **Create Case**: Choose case type (Criminal/Civil/Family/Corporate)
-5. **Configure**: Set jurisdiction level, severity, participants
-6. **Simulate**: Professional courtroom with evidence management
-7. **Analyze**: View performance metrics and case analytics
-8. **Track**: Review case history and outcomes
+### 🎯 **Core Features**
+| Feature | Description | Status |
+|---------|-------------|--------|
+| 🔐 **User Authentication** | Secure login with JWT tokens | ✅ Ready |
+| 📊 **Analytics Dashboard** | Beautiful charts and metrics | ✅ Ready |
+| 📁 **Evidence Management** | Upload and organize case files | ✅ Ready |
+| ⚖️ **Multi-Case Types** | Criminal, Civil, Family, Corporate | ✅ Ready |
+| 🎭 **Role Playing** | Defense, Prosecution, Judge, Witness | ✅ Ready |
+| 💾 **Database** | SQLite for data persistence | ✅ Ready |
+| 🤖 **Smart AI** | Context-aware legal responses | ✅ Ready |
+| 🎨 **Beautiful UI** | Professional modern interface | ✅ Ready |
 
 ---
 
-## 🎮 **How to Use**
+## 🏗️ **System Architecture - Interactive Diagram**
 
-### **🏛️ PROFESSIONAL CASE SETUP:**
-1. **Authentication**: Login to your professional account
-2. **Case Configuration**:
-   - **Case Title**: Professional case naming
-   - **Case Type**: Criminal, Civil, Family, Corporate, Constitutional
-   - **Jurisdiction**: District, High Court, Supreme Court
-   - **Severity**: Minor, Major, Felony
-   - **Participants**: Multiple party support
-
-3. **Enhanced Roles**:
-   - **Defense Attorney**: Advanced legal arguments
-   - **Prosecution**: Evidence-based cases
-   - **Judge**: Judicial decisions with precedents
-   - **Witness**: Testimony and cross-examination
-   - **Jury**: Deliberation simulation
-
-4. **Professional Features**:
-   - Evidence upload and management
-   - Legal precedent integration
-   - Advanced objection system
-   - Motion filing capabilities
-
-### **During the Session:**
-- **Type Arguments**: Enter legal arguments in the text box
-- **Click "Next Step"**: Submit your argument
-- **AI Responds**: Judge and opposing counsel reply (5-10 seconds)
-- **Continue**: Build your case through back-and-forth dialogue
-- **Stay Relevant**: System blocks off-topic questions
-
-### **Example Session Flow:**
-```
-Judge: "Court is now in session. We have a theft case to discuss..."
-Bailiff: "The defense has entered the courtroom."
-
-You (Defense): "Your Honor, my client maintains his innocence. The security footage is unclear."
-
-Judge: "I see. Let me review the evidence. Do you have witnesses to support this claim?"
-
-Opposing Counsel: "Your Honor, the footage clearly shows the defendant's distinctive jacket."
-
-You (Defense): "The jacket is common. Many people own similar ones."
+```mermaid
+graph TB
+    subgraph "🌐 Client Layer"
+        A[👤 User Browser<br/>Port: 8501]
+        B[🎨 Streamlit Frontend<br/>Professional UI]
+    end
+    
+    subgraph "⚡ Application Layer"
+        C[🚀 FastAPI Backend<br/>Port: 8000]
+        D[🔐 JWT Authentication]
+        E[📊 Analytics Engine]
+        F[📁 Evidence Manager]
+    end
+    
+    subgraph "🤖 AI Layer"
+        G[🧠 Ollama AI Service<br/>Port: 11434]
+        H[📚 Legal Knowledge Base]
+        I[⚖️ Context Processor]
+    end
+    
+    subgraph "💾 Data Layer"
+        J[(🗄️ SQLite Database)]
+        K[📂 File Storage<br/>Sessions & Evidence]
+    end
+    
+    A --> B
+    B <--> C
+    C --> D
+    C --> E
+    C --> F
+    C <--> G
+    G --> H
+    G --> I
+    C <--> J
+    C <--> K
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style G fill:#fff3e0
+    style J fill:#fce4ec
 ```
 
 ---
 
-## 🔒 **Security Features**
+## 🛠️ **Technologies Used - The Power Behind the Magic**
 
-### **Recently Fixed Vulnerabilities:**
-- ✅ **Code Injection**: Replaced `eval()` with safe `json.loads()`
-- ✅ **Path Traversal**: Added session ID validation
-- ✅ **CORS Issues**: Restricted to specific origins
-- ✅ **Input Validation**: Added length limits and type checking
-- ✅ **Resource Leaks**: Fixed HTTP request handling
-- ✅ **Error Handling**: Comprehensive exception management
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="400">
+</div>
 
-### **Current Security Measures:**
-- Session IDs validated with regex patterns
-- File paths sanitized to prevent directory traversal
-- Input length limits (case facts: 10-5000 chars)
-- CORS restricted to localhost origins
-- Safe JSON serialization/deserialization
-- Comprehensive logging of security events
+### 🎨 **Frontend Technologies**
+<div align="center">
 
----
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## 🎯 **Relevance Filtering System**
+</div>
 
-### **Purpose:**
-Prevents users from asking irrelevant questions during court sessions and keeps AI focused on legal matters.
+### ⚡ **Backend Technologies**
+<div align="center">
 
-### **How It Works:**
-```python
-# BLOCKED: Irrelevant topics
-"What is a black hole?" → Judge: "Order in the court! Stay relevant to the case."
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
-# ALLOWED: Legal questions  
-"What evidence do you have?" → Normal AI processing continues
-```
+</div>
 
-### **Blocked Topics:**
-- Science, space, astronomy, physics
-- Entertainment, movies, music, games
-- Technology, programming, computers
-- Personal topics, weather, food, sports
+### 🤖 **AI Technologies**
+<div align="center">
 
-### **Allowed Topics:**
-- Legal arguments and evidence
-- Case facts and witness testimony
-- Procedural questions and objections
-- Court-related discussions
+![Ollama](https://img.shields.io/badge/Ollama-FF6B35?style=for-the-badge&logo=ollama&logoColor=white)
+![Mistral](https://img.shields.io/badge/Mistral-FF7000?style=for-the-badge&logo=mistral&logoColor=white)
+![LLaMA](https://img.shields.io/badge/LLaMA-4285F4?style=for-the-badge&logo=meta&logoColor=white)
 
-### **Smart Detection:**
-- **Context Aware**: Considers case facts when filtering
-- **Keyword Based**: Uses legal vs. irrelevant keyword lists
-- **Length Tolerant**: Short responses assumed relevant
-- **Case Matching**: Allows terms from original case description
+</div>
 
 ---
 
-## ⚙️ **Technical Details**
+## 🎮 **How to Run - Step by Step (Explained Like You're 5!)**
 
-### **API Endpoints:**
-```python
-POST /start_session     # Create new court case
-POST /simulate_step     # Process user argument  
-GET  /session/{id}      # Retrieve session data
-DELETE /session/{id}    # Delete session
-GET  /health           # Check system status
-```
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="400">
+</div>
 
-### **Data Models:**
-```json
-{
-  "session_id": "a1b2c3d4",
-  "case_facts": "Theft case with security footage...",
-  "user_role": "defense",
-  "transcript": [
-    {"speaker": "Judge", "text": "Court is now in session..."},
-    {"speaker": "Defense", "text": "My client is innocent..."}
-  ],
-  "created_at": "2025-12-08T..."
-}
-```
+### 🎯 **Super Easy 3-Step Setup!**
 
-### **AI Processing:**
-- **Parallel Generation**: Judge and counsel responses generated simultaneously
-- **Context Limiting**: Uses last 4 transcript entries for speed
-- **Response Limits**: 300 characters max per response
-- **Timeout Handling**: 15-second timeout with fallback responses
-- **Model Optimization**: Uses Mistral for speed, Llama2 for detail
+#### 📥 **Step 1: Download Everything**
+```bash
+# 1. Clone this awesome project
+git clone https://github.com/Srinidhi-070/ai-courtroom-simulator.git
 
----
+# 2. Go into the project folder
+cd ai-courtroom-simulator
 
-## 🛠️ **Installation & Setup**
-
-### **Prerequisites:**
-1. **Python 3.8+**: Download from https://python.org
-2. **Ollama**: Download from https://ollama.ai/download/windows
-3. **Git** (optional): For cloning the repository
-
-### **Installation Steps:**
-```cmd
-# 1. Create virtual environment
+# 3. Create a special Python environment (like a sandbox!)
 python -m venv venv
 
-# 2. Activate virtual environment  
-venv\Scripts\activate
+# 4. Activate the sandbox
+venv\Scripts\activate  # On Windows
+# OR
+source venv/bin/activate  # On Mac/Linux
+```
 
-# 3. Install dependencies
+#### 🔧 **Step 2: Install the Magic Tools**
+```bash
+# Install all the cool libraries we need
 pip install -r requirements.txt
 
-# 4. Install Ollama models
+# Download the AI brain (this might take a few minutes)
 ollama pull mistral
 ollama pull llama2
-
-# 5. Start Ollama service
-ollama serve
 ```
 
-### **🔧 ENHANCED DEPENDENCIES:**
-```txt
-fastapi>=0.104.1        # Advanced REST API framework
-uvicorn[standard]>=0.24.0  # High-performance ASGI server
-streamlit>=1.28.0       # Interactive web interface
-requests>=2.31.0        # HTTP client with security
-pydantic>=2.5.0         # Advanced data validation
-python-multipart>=0.0.6 # File upload for evidence
-PyJWT>=2.8.0           # JWT authentication
-plotly>=5.17.0         # Interactive analytics charts
-pandas>=2.1.0          # Data analysis and metrics
-sqlite3                 # Database management
-python-jose[cryptography]>=3.3.0  # Enhanced security
-passlib[bcrypt]>=1.7.4  # Password hashing
-python-dateutil>=2.8.2  # Advanced date handling
-```
-
----
-
-## 🐛 **Troubleshooting**
-
-### **Common Issues:**
-
-#### **"Ollama bind error"**
-```
-Error: listen tcp 127.0.0.1:11434: bind: Only one usage of each socket address
-```
-**Solution**: Ollama is already running. Don't start it again - just use `start_all.bat`
-
-#### **"Cannot connect to backend"**
-**Causes**: Backend not running or port conflict
-**Solutions**:
-```cmd
-# Check if backend is running
-netstat -ano | findstr ":8000"
-
-# Kill conflicting processes
-taskkill /IM python.exe /F
-
-# Restart application
+#### 🚀 **Step 3: Start the Magic!**
+```bash
+# Method 1: Super Easy Way (Windows)
 start_all.bat
+
+# Method 2: Manual Way (Any OS)
+# Terminal 1: Start the AI brain
+ollama serve
+
+# Terminal 2: Start the backend
+python server.py
+
+# Terminal 3: Start the frontend
+streamlit run app.py
 ```
 
-#### **"ModuleNotFoundError"**
-**Cause**: Dependencies not installed
-**Solution**:
-```cmd
-venv\Scripts\activate
-pip install -r requirements.txt
+### 🎉 **That's It! Now Open Your Browser!**
+- 🌐 **Main App**: http://localhost:8501
+- 🔧 **API Docs**: http://localhost:8000/docs
+- ❤️ **Health Check**: http://localhost:8000/health
+
+---
+
+## 📱 **User Interface Showcase**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="400">
+</div>
+
+### 🎨 **Beautiful Screens**
+
+#### 🔐 **Login Screen**
+- Modern authentication with JWT
+- Secure password hashing
+- User registration system
+
+#### 🏛️ **Courtroom Interface**
+- Real-time transcript display
+- Professional case setup
+- Evidence management panel
+
+#### 📊 **Analytics Dashboard**
+- Interactive charts with Plotly
+- Performance tracking
+- Win/loss statistics
+
+#### 📁 **Case History**
+- Complete session records
+- Search and filter options
+- Export capabilities
+
+---
+
+## 🎭 **How to Use - The Fun Part!**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="400">
+</div>
+
+### 🎪 **Choose Your Adventure!**
+
+#### 👨‍💼 **As a Defense Lawyer**
+```
+You: "Your Honor, my client is innocent!"
+Judge: "Present your evidence, counselor."
+You: "The security footage is unclear and inconclusive."
+AI Prosecutor: "Objection! The footage clearly shows the defendant."
 ```
 
-#### **"AI responses are slow"**
-**Causes**: First-time model loading or CPU processing
-**Solutions**:
-- First response: 10-15 seconds (normal)
-- Subsequent: 3-7 seconds (normal)
-- Use GPU if available for faster processing
-
-#### **"Session not found"**
-**Cause**: Session file corrupted or deleted
-**Solution**: Start a new session - old sessions auto-save
-
----
-
-## 📊 **Performance & Optimization**
-
-### **Response Times:**
-- **Session Creation**: 1-2 seconds
-- **First AI Response**: 10-15 seconds (model loading)
-- **Subsequent Responses**: 3-7 seconds
-- **Fallback Responses**: Instant
-
-### **Optimizations Applied:**
-- **Parallel Processing**: Judge and counsel responses generated simultaneously
-- **Session Caching**: Active sessions kept in memory
-- **Context Limiting**: Only last 4 transcript entries used
-- **Response Limiting**: 300 character max per response
-- **Fallback Constants**: Pre-defined responses for speed
-
-### **Resource Usage:**
-- **Memory**: ~100MB for backend, ~50MB for frontend
-- **CPU**: Moderate during AI generation, low otherwise
-- **Storage**: ~1KB per session file
-- **Network**: Local only (no external API calls)
-
----
-
-## 🎓 **Educational Value**
-
-### **Legal Learning:**
-- **Courtroom Procedures**: Experience real legal processes
-- **Argument Structure**: Learn how to build legal cases
-- **Legal Terminology**: Exposure to court language
-- **Role Understanding**: See different perspectives (defense/prosecution/judge)
-
-### **AI Interaction:**
-- **Conversational AI**: Experience advanced AI dialogue
-- **Context Awareness**: See how AI maintains conversation context
-- **Prompt Engineering**: Understand how AI responds to different inputs
-
-### **Technical Skills:**
-- **Full-Stack Development**: Complete web application example
-- **API Design**: RESTful API implementation
-- **AI Integration**: Local LLM integration patterns
-- **Security Practices**: Real-world security implementations
-
----
-
-## 🔮 **Future Enhancements**
-
-### **✅ IMPLEMENTED FEATURES:**
-- **✅ Multiple Case Types**: Criminal, civil, family, corporate, constitutional
-- **✅ Evidence Management**: Document and file upload system
-- **✅ User Authentication**: Secure login/register with JWT
-- **✅ Analytics Dashboard**: Performance tracking with charts
-- **✅ Database Integration**: SQLite with full data persistence
-- **✅ Advanced Roles**: Defense, prosecution, judge, witness, jury
-- **✅ Professional UI**: Modern interface with navigation
-- **✅ Case History**: Complete session tracking
-- **✅ Legal Knowledge Base**: Enhanced AI with legal precedents
-- **✅ Advanced Security**: Enterprise-level protection
-
-### **🔮 UPCOMING FEATURES:**
-- **🔄 Real-time Collaboration**: Multiple users in same case
-- **🎤 Voice Interface**: Speech-to-text integration
-- **🌐 Multi-language**: Hindi, Tamil, and regional languages
-- **☁️ Cloud Deployment**: AWS/Azure hosting options
-- **📱 Mobile App**: React Native mobile version
-- **🤖 Advanced AI**: GPT-4 and Claude integration
-- **📊 Advanced Analytics**: ML-powered insights
-
-### **Technical Improvements:**
-- **User Authentication**: Multi-user support
-- **Cloud Deployment**: AWS/Azure hosting
-- **Mobile App**: React Native mobile version
-- **Real-time Collaboration**: Multiple users in same case
-- **Advanced AI**: GPT-4 integration option
-- **Analytics Dashboard**: Usage statistics and insights
-
----
-
-## 📈 **PROFESSIONAL EDITION STATISTICS**
-
-- **Lines of Code**: ~2000+ (enhanced backend + frontend)
-- **Dependencies**: 13 professional packages
-- **Security Level**: Enterprise-grade with JWT authentication
-- **Database**: SQLite with user management and analytics
-- **Response Time**: 2-5 seconds (optimized)
-- **Supported Roles**: 5+ (defense, prosecution, judge, witness, jury)
-- **Case Types**: 5 (criminal, civil, family, corporate, constitutional)
-- **Features**: 15+ professional features
-- **UI Components**: 50+ enhanced interface elements
-- **Analytics**: Real-time performance tracking
-- **Evidence Management**: Full file upload system
-- **User Management**: Complete authentication system
-
----
-
-## 🤝 **Contributing**
-
-### **How to Contribute:**
-1. **Report Issues**: Use GitHub issues for bugs
-2. **Suggest Features**: Propose new functionality
-3. **Submit PRs**: Code contributions welcome
-4. **Documentation**: Help improve this guide
-5. **Testing**: Test edge cases and report findings
-
-### **Development Setup:**
-```cmd
-# Clone repository
-git clone <repository-url>
-cd "Gen AI"
-
-# Setup development environment
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-
-# Run in development mode
-python server.py  # Terminal 1
-streamlit run app.py  # Terminal 2
+#### 👩‍⚖️ **As a Judge**
 ```
+You: "Order in the court! I will now hear opening statements."
+AI Defense: "Your Honor, we will prove our client's innocence."
+AI Prosecutor: "The evidence will show guilt beyond reasonable doubt."
+You: "Proceed with your case, counselor."
+```
+
+#### 👨‍💼 **As a Prosecutor**
+```
+You: "Ladies and gentlemen of the jury, the evidence is clear."
+AI Defense: "Objection! That's argumentative."
+Judge: "Sustained. Please rephrase, counselor."
+You: "The defendant was seen at the scene of the crime."
+```
+
+---
+
+## 🔒 **Security Features - Fort Knox Level!**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7763.gif" width="400">
+</div>
+
+### 🛡️ **What We Fixed**
+- ✅ **Code Injection**: No more dangerous `eval()` functions
+- ✅ **Path Traversal**: Secure file handling
+- ✅ **CORS Issues**: Proper cross-origin policies
+- ✅ **Input Validation**: Everything is checked and sanitized
+- ✅ **Resource Leaks**: Memory management optimized
+- ✅ **Error Handling**: Graceful error recovery
+
+### 🔐 **Current Protection**
+- 🔑 **JWT Authentication**: Secure token-based login
+- 🧹 **Input Sanitization**: All user input is cleaned
+- 🚫 **Rate Limiting**: Prevents spam and abuse
+- 📝 **Audit Logging**: Track all user actions
+- 🔒 **Password Hashing**: Bcrypt encryption
+- 🛡️ **SQL Injection Protection**: Parameterized queries
+
+---
+
+## 🎯 **Smart AI Features**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="400">
+</div>
+
+### 🧠 **Relevance Filter System**
+Our AI is smart enough to keep conversations on track!
+
+#### ❌ **What Gets Blocked**
+```python
+User: "What is a black hole?"
+Judge: "Order in the court! Please stay relevant to the case."
+
+User: "What's your favorite movie?"
+AI: "I must focus on the legal matter at hand."
+```
+
+#### ✅ **What Gets Allowed**
+```python
+User: "What evidence do you have?"
+AI: "The prosecution has submitted security footage..."
+
+User: "I object to this line of questioning!"
+Judge: "Objection noted. Please state your grounds."
+```
+
+### 🎓 **Legal Knowledge Base**
+- **Criminal Law**: Theft, assault, murder cases
+- **Civil Law**: Contracts, property disputes
+- **Family Law**: Divorce, custody matters
+- **Corporate Law**: Business disputes
+- **Constitutional Law**: Rights and freedoms
+
+---
+
+## 📊 **Project Statistics - Impressive Numbers!**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="400">
+</div>
+
+### 📈 **Development Stats**
+| Metric | Value | Description |
+|--------|-------|-------------|
+| 📝 **Lines of Code** | 2000+ | Professional-grade codebase |
+| 📦 **Dependencies** | 13 | Carefully selected libraries |
+| 🔒 **Security Fixes** | 15+ | Enterprise-level security |
+| ⚡ **Response Time** | 2-5s | Optimized performance |
+| 🎭 **Supported Roles** | 5+ | Multiple character types |
+| ⚖️ **Case Types** | 5 | Comprehensive legal coverage |
+| 🎨 **UI Components** | 50+ | Rich user interface |
+| 📊 **Features** | 15+ | Professional capabilities |
+
+---
+
+## 🔮 **Future Roadmap - What's Coming Next!**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257463-4d082cb4-7483-4eaf-bc25-6dde2628aabd.gif" width="400">
+</div>
+
+### ✅ **Already Implemented**
+- [x] User Authentication & JWT Security
+- [x] Multiple Case Types (Criminal, Civil, Family, Corporate)
+- [x] Evidence Management System
+- [x] Analytics Dashboard with Interactive Charts
+- [x] SQLite Database Integration
+- [x] Professional UI with Navigation
+- [x] AI-Powered Legal Responses
+- [x] Case History Tracking
+
+### 🚀 **Coming Soon**
+- [ ] 🎤 **Voice Interface** - Talk to the AI!
+- [ ] 🌍 **Multi-Language Support** - Hindi, Tamil, Spanish
+- [ ] ☁️ **Cloud Deployment** - AWS/Azure hosting
+- [ ] 📱 **Mobile App** - React Native version
+- [ ] 🤝 **Real-Time Collaboration** - Multiple users in one case
+- [ ] 🧠 **Advanced AI Models** - GPT-4 integration
+- [ ] 📊 **ML Analytics** - Predictive insights
+- [ ] 🎮 **Gamification** - Points, badges, leaderboards
+
+---
+
+## 🤝 **Contributing - Join Our Legal Tech Revolution!**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7763.gif" width="400">
+</div>
+
+### 🎯 **How to Contribute**
+
+1. **🍴 Fork the Repository**
+   ```bash
+   # Click the Fork button on GitHub
+   ```
+
+2. **🌿 Create a Feature Branch**
+   ```bash
+   git checkout -b feature/amazing-new-feature
+   ```
+
+3. **💻 Make Your Changes**
+   ```bash
+   # Add your awesome code
+   git add .
+   git commit -m "Add amazing new feature"
+   ```
+
+4. **🚀 Push and Create PR**
+   ```bash
+   git push origin feature/amazing-new-feature
+   # Create Pull Request on GitHub
+   ```
+
+### 🎨 **What We Need Help With**
+- 🐛 **Bug Fixes**: Find and fix issues
+- ✨ **New Features**: Add cool functionality
+- 📚 **Documentation**: Improve guides and docs
+- 🎨 **UI/UX**: Make it even more beautiful
+- 🧪 **Testing**: Add comprehensive tests
+- 🌍 **Translations**: Multi-language support
 
 ---
 
 ## 📄 **License & Usage**
 
-This project is created for educational purposes. Feel free to:
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="400">
+</div>
+
+### ✅ **What You Can Do**
 - ✅ Use for learning and education
 - ✅ Modify for personal projects
 - ✅ Share with students and colleagues
 - ✅ Use as portfolio demonstration
+- ✅ Commercial use with attribution
 
-Please:
-- 📝 Credit the original work
-- 🔒 Don't use for actual legal advice
-- 🚫 Don't deploy without security review
-- 📚 Keep educational focus
-
----
-
-## 🆘 **Support**
-
-### **Getting Help:**
-1. **Check this README**: Most questions answered here
-2. **Review Error Messages**: Often self-explanatory
-3. **Check Logs**: Look at terminal output for details
-4. **Test Components**: Verify Ollama, backend, frontend separately
-
-### **Quick Diagnostics:**
-```cmd
-# Test Ollama
-curl http://127.0.0.1:11434/api/tags
-
-# Test Backend  
-curl http://127.0.0.1:8000/health
-
-# Test Frontend
-# Open http://localhost:8501 in browser
-```
+### ❌ **What You Should Not Do**
+- ❌ Use for actual legal advice
+- ❌ Deploy without security review
+- ❌ Remove attribution
+- ❌ Claim as your own work
 
 ---
 
-## ✨ **Summary**
+## 🆘 **Need Help? We've Got You Covered!**
 
-The **AI Courtroom Simulator** is a complete, secure, and educational full-stack application that demonstrates:
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="400">
+</div>
 
-- **Modern Web Development**: FastAPI + Streamlit
-- **AI Integration**: Local LLM with Ollama
-- **Security Best Practices**: Input validation, path protection
-- **Real-world Application**: Practical legal education tool
-- **Performance Optimization**: Parallel processing, caching
-- **User Experience**: Intuitive interface, error handling
+### 🔧 **Quick Troubleshooting**
 
-**🚀 PROFESSIONAL EDITION READY**: Run `start_all.bat` for the complete professional courtroom experience with authentication, analytics, evidence management, and advanced AI!
+#### 🚨 **Common Issues & Solutions**
 
-### **🎯 WHAT MAKES THIS PROFESSIONAL:**
-- **Enterprise Security**: JWT authentication, password hashing, secure sessions
-- **Database Integration**: Persistent user accounts, case history, analytics
-- **Professional UI**: Modern design, navigation, interactive dashboards
-- **Advanced AI**: Legal knowledge base, contextual responses, multiple case types
-- **Evidence Management**: File uploads, document handling, case organization
-- **Analytics & Insights**: Performance tracking, win rates, case statistics
-- **Multi-User Support**: User accounts, role-based access, session management
-- **Scalable Architecture**: Database-driven, API-first, production-ready
+| Problem | Solution |
+|---------|----------|
+| 🔴 **Ollama not starting** | It's already running! Check with `netstat -ano \| findstr ":11434"` |
+| 🔴 **Backend won't start** | Kill existing Python processes: `taskkill /IM python.exe /F` |
+| 🔴 **Missing modules** | Run: `pip install -r requirements.txt` |
+| 🔴 **Slow AI responses** | First response takes 10-15s (normal), then 3-7s |
+
+#### 📞 **Get Support**
+- 🐛 **Report Bugs**: [Create an Issue](https://github.com/Srinidhi-070/ai-courtroom-simulator/issues)
+- 💬 **Ask Questions**: [Start a Discussion](https://github.com/Srinidhi-070/ai-courtroom-simulator/discussions)
+- 📧 **Email Support**: [Contact Us](mailto:support@example.com)
+- 📚 **Documentation**: Check this README first!
 
 ---
 
-**Created for educational purposes - AI Courtroom Simulation ⚖️🤖**" #   a i - c o u r t r o o m - s i m u l a t o r "    
- 
+## 🎉 **Acknowledgments & Credits**
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="500">
+</div>
+
+### 🙏 **Special Thanks To**
+- 🤖 **Ollama Team** - For the amazing local AI platform
+- 🚀 **FastAPI** - For the lightning-fast web framework
+- 🎨 **Streamlit** - For making beautiful UIs simple
+- 📊 **Plotly** - For interactive data visualization
+- 🔒 **Security Community** - For vulnerability reports and fixes
+- 👥 **Contributors** - Everyone who helped make this better
+- ⭐ **You** - For using and supporting this project!
+
+---
+
+<div align="center">
+
+## 🌟 **Star This Project If You Love It!** 🌟
+
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="400">
+
+### 🚀 **Ready to Experience the Future of Legal Education?**
+
+[![Get Started](https://img.shields.io/badge/🚀_Get_Started-Click_Here!-brightgreen?style=for-the-badge&logo=rocket)](https://github.com/Srinidhi-070/ai-courtroom-simulator)
+[![Download](https://img.shields.io/badge/📥_Download-Latest_Release-blue?style=for-the-badge&logo=download)](https://github.com/Srinidhi-070/ai-courtroom-simulator/releases)
+[![Documentation](https://img.shields.io/badge/📚_Docs-Read_More-orange?style=for-the-badge&logo=book)](https://github.com/Srinidhi-070/ai-courtroom-simulator/wiki)
+
+---
+
+### 💝 **Made with ❤️ for Legal Education**
+
+**Created by**: [Srinidhi](https://github.com/Srinidhi-070)  
+**License**: MIT  
+**Version**: 2.0.0 Professional Edition  
+
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300">
+
+</div>
+
+---
+
+<div align="center">
+
+**⚖️ AI Courtroom Simulator - Where Technology Meets Justice! ⚖️**
+
+*Empowering the next generation of legal professionals through AI-powered simulation*
+
+</div>
