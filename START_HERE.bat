@@ -1,6 +1,6 @@
 @echo off
 REM =====================================================
-REM AI COURTROOM SIMULATOR - SIMPLE WORKING VERSION
+REM AI COURTROOM SIMULATOR - ONE-CLICK STARTUP
 REM =====================================================
 
 cd /d "%~dp0"
@@ -9,24 +9,24 @@ cls
 echo.
 echo ======================================================================
 echo                    AI COURTROOM SIMULATOR
-echo                      SIMPLE WORKING VERSION
+echo                      ONE-CLICK STARTUP
 echo ======================================================================
 echo.
 
 echo [STEP 1] Installing dependencies...
-pip install -r requirements_simple.txt --quiet
+pip install -r requirements.txt --quiet
 echo [✓] Dependencies installed
 
 echo.
 echo [STEP 2] Starting Backend Server...
-start "Backend Server" cmd /k "python server_simple.py"
+start "Backend Server" cmd /k "python server.py"
 
 echo Waiting for backend to start...
 timeout /t 3 /nobreak
 
 echo.
 echo [STEP 3] Starting Frontend...
-start "Frontend" cmd /k "python -m streamlit run app_simple.py"
+start "Frontend" cmd /k "python -m streamlit run app.py"
 
 echo.
 echo ======================================================================
