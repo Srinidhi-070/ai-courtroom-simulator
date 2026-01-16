@@ -34,7 +34,7 @@ st.subheader("🏛️ Start a New Case")
 
 if not check_backend():
     st.error("❌ Backend server not running! Please start the backend first.")
-    st.info("Run: python server_simple.py")
+    st.info("💡 Run START_HERE.bat or manually run: python server.py")
     st.stop()
 
 case_title = st.text_input("📝 Case Title", placeholder="e.g., State vs. John Doe - Theft Case")
@@ -97,21 +97,27 @@ if st.session_state.session_id:
         if st.button("⚡ Submit Argument", type="primary"):
             if user_input.strip():
                 try:
-                    response = requests.post(
-                        f"{API_URL}/simulate_step",
-                        json={
-                            "session_id": st.session_state.session_id,
-                            "user_input": user_input
-                        },
-                        timeout=15
-                    )
+                    with st.spinner('⏳ Processing argument...'):
+                        response = requests.post(
+                            f"{API_URL}/simulate_step",
+                            json={
+                                "session_id": st.session_state.session_id,
+                                "user_input": user_input
+                            },
+                            timeout=30
+                        )
                     
                     if response.status_code == 200:
                         data = response.json()
                         st.session_state.transcript = data["transcript"]
+                        st.success("✅ Argument processed!")
                         st.rerun()
                     else:
                         st.error("Error processing argument")
+                except requests.exceptions.Timeout:
+                    st.error("⏱️ Request timed out. AI might be slow or unavailable. Using fallback responses.")
+                except requests.exceptions.ConnectionError:
+                    st.error("❌ Cannot connect to backend. Please check if server is running.")
                 except Exception as e:
                     st.error(f"Error: {str(e)}")
             else:

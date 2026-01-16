@@ -22,6 +22,7 @@ OLLAMA_PORT = "11434"
 OLLAMA_BASE = f"http://{OLLAMA_HOST}:{OLLAMA_PORT}"
 OLLAMA_API_URL = f"{OLLAMA_BASE}/api/generate"
 OLLAMA_MODEL = "mistral"
+USE_OLLAMA = True  # Set to False to use only fallback responses
 
 # Enable CORS
 app.add_middleware(
@@ -92,25 +93,31 @@ def generate_ai_response(role: str, case_facts: str, transcript: list, user_inpu
     if not is_relevant_to_case(user_input, case_facts):
         return get_irrelevance_response(role)
     
+    # If Ollama is disabled, use fallback immediately
+    if not USE_OLLAMA:
+        return get_fallback_response(role)
+    
+    # Quick check if Ollama is available
+    try:
+        quick_check = requests.get(f"{OLLAMA_BASE}/api/tags", timeout=1)
+        if quick_check.status_code != 200:
+            return get_fallback_response(role)
+    except:
+        return get_fallback_response(role)
+    
     try:
         # Build context
         recent_transcript = "\n".join([f"{entry['speaker']}: {entry['text']}" for entry in transcript[-3:]])
         
-        # Create prompt
+        # Create shorter prompt for faster response
         if role == "judge":
-            prompt = f"""As a judge, respond briefly (1-2 sentences):
-Case: {case_facts[:150]}
-Recent: {recent_transcript[-200:]}
-User: {user_input[:100]}
-Judicial response:"""
+            prompt = f"""Judge response (1 sentence): {user_input[:80]}
+Case: {case_facts[:100]}"""
         else:
-            prompt = f"""As opposing counsel, respond briefly (1-2 sentences):
-Case: {case_facts[:150]}
-Recent: {recent_transcript[-200:]}
-User: {user_input[:100]}
-Legal response:"""
+            prompt = f"""Lawyer response (1 sentence): {user_input[:80]}
+Case: {case_facts[:100]}"""
         
-        # Try Ollama API
+        # Try Ollama API with shorter timeout
         response = requests.post(
             OLLAMA_API_URL,
             json={
@@ -118,9 +125,9 @@ Legal response:"""
                 "prompt": prompt,
                 "stream": False,
                 "temperature": 0.7,
-                "num_predict": 60
+                "num_predict": 40
             },
-            timeout=15
+            timeout=8
         )
         
         if response.status_code == 200:
